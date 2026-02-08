@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excalidraw Preview</title>
+  <link rel="stylesheet" href="https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/dev/index.css" />
+  <script>
+    window.EXCALIDRAW_ASSET_PATH = "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/prod/";
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@19.0.0",
+        "react/jsx-runtime": "https://esm.sh/react@19.0.0/jsx-runtime",
+        "react-dom": "https://esm.sh/react-dom@19.0.0",
+        "react-dom/client": "https://esm.sh/react-dom@19.0.0/client"
+      }
+    }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body, #app { height: 100%; width: 100%; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module">
+    import React from "https://esm.sh/react@19.0.0";
+    import { createRoot } from "https://esm.sh/react-dom@19.0.0/client";
+    import * as ExcalidrawLib from "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/dev/index.js?external=react,react-dom";
+
+    const { Excalidraw, convertToExcalidrawElements } = ExcalidrawLib;
+
+    // ELEMENTS_PLACEHOLDER
+    const elements = convertToExcalidrawElements(ELEMENTS_DATA);
+
+    function App() {
+      return React.createElement(
+        "div",
+        { style: { height: "100%", width: "100%" } },
+        React.createElement(Excalidraw, {
+          initialData: {
+            elements: elements,
+            appState: { viewBackgroundColor: "#ffffff" },
+            scrollToContent: true,
+          },
+          langCode: "en",
+        })
+      );
+    }
+
+    const root = createRoot(document.getElementById("app"));
+    root.render(React.createElement(App));
+  </script>
+</body>
+</html>
