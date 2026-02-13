@@ -2,9 +2,9 @@
 
 import { spawn, execSync } from "node:child_process";
 import puppeteer from "puppeteer-core";
-
-const useProfile = process.argv[2] === "--profile";
-
+// Disable copying default profile since it can be a security risk and cause issues with multiple instances. Users can manually copy their profile if needed.
+// const useProfile = process.argv[2] === "--profile";
+const useProfile = false
 if (process.argv[2] && process.argv[2] !== "--profile") {
 	console.log("Usage: browser-start.js [--profile]");
 	console.log("\nOptions:");
