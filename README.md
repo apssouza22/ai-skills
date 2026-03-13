@@ -7,8 +7,11 @@ A collection of reusable AI agent skills for code review, image generation, and 
 | Skill | Description |
 |-------|-------------|
 | [browser-tools](skills/browser-tools/) | Interactive browser automation via Chrome DevTools Protocol for web page interaction, frontend testing, and scraping. |
+| [c4-architecture](skills/c4-architecture/) | Generate architecture documentation using C4 model Mermaid diagrams (context, container, component, deployment). |
 | [code-review-expert](skills/code-review-expert/) | Senior engineer code review covering SOLID, security, performance, code structure, and error handling. Supports local git changes and GitHub PR URLs. |
-| [excalidraw-artist](skills/excalidraw-artist/) | Create Excalidraw diagrams (flowcharts, architecture, mind maps) from text descriptions with browser preview. |
+| [draw-io](skills/draw-io/) | draw.io diagram creation, editing, and review. Supports .drawio XML editing, PNG conversion, layout adjustment, and AWS icon usage. |
+| [humanizer](skills/humanizer/) | Remove signs of AI-generated writing from text. Detects and fixes inflated symbolism, promotional language, AI vocabulary, and other telltale patterns. |
+| [marp-slide](skills/marp-slide/) | Create professional Marp presentation slides with 7 built-in themes, custom image layouts, and automatic quality improvements. |
 | [nano-banana-pro](skills/nano-banana-pro/) | Generate images from text prompts using Google Gemini. |
 | [pdf](skills/pdf/) | PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. |
 | [pptx](skills/pptx/) | Presentation creation, editing, and analysis for .pptx files with template support, thumbnail generation, and visual validation. |
@@ -29,6 +32,7 @@ git clone https://github.com/alexsandro-souza/ai-skills.git
 
 # Copy a skill to Cursor's global skills directory
 cp -r ai-skills/skills/code-review-expert ~/.cursor/skills/
+cp -r ai-skills/skills/code-review-expert ~/.claude/skills/
 ```
 
 Global skills are available in every Cursor workspace without any per-project setup.
