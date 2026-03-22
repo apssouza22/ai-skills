@@ -8,6 +8,7 @@ A collection of reusable AI agent skills for code review, image generation, and 
 |-------|-------------|
 | [browser-tools](skills/browser-tools/) | Interactive browser automation via Chrome DevTools Protocol for web page interaction, frontend testing, and scraping. |
 | [c4-architecture](skills/c4-architecture/) | Generate architecture documentation using C4 model Mermaid diagrams (context, container, component, deployment). |
+| [cli-code-review](skills/cli-code-review/) | Manual code review of uncommitted changes from the terminal using Vim, with file change heatmaps and side-by-side diffs. |
 | [code-review-expert](skills/code-review-expert/) | Senior engineer code review covering SOLID, security, performance, code structure, and error handling. Supports local git changes and GitHub PR URLs. |
 | [draw-io](skills/draw-io/) | draw.io diagram creation, editing, and review. Supports .drawio XML editing, PNG conversion, layout adjustment, and AWS icon usage. |
 | [humanizer](skills/humanizer/) | Remove signs of AI-generated writing from text. Detects and fixes inflated symbolism, promotional language, AI vocabulary, and other telltale patterns. |
