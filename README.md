@@ -4,20 +4,26 @@ A collection of reusable AI agent skills for code review, image generation, and 
 
 ## Available Skills
 
-| Skill | Description |
-|-------|-------------|
-| [browser-tools](skills/browser-tools/) | Interactive browser automation via Chrome DevTools Protocol for web page interaction, frontend testing, and scraping. |
-| [c4-architecture](skills/c4-architecture/) | Generate architecture documentation using C4 model Mermaid diagrams (context, container, component, deployment). |
-| [cli-code-review](skills/cli-code-review/) | Manual code review of uncommitted changes from the terminal using Vim, with file change heatmaps and side-by-side diffs. |
+| Skill                                            | Description |
+|--------------------------------------------------|-------------|
+| [browser-tools](skills/browser-tools/)           | Interactive browser automation via Chrome DevTools Protocol for web page interaction, frontend testing, and scraping. |
+| [c4-architecture](skills/c4-architecture/)       | Generate architecture documentation using C4 model Mermaid diagrams (context, container, component, deployment). |
+| [cli-code-review](skills/cli-code-review/)       | Manual code review of uncommitted changes from the terminal using Vim, with file change heatmaps and side-by-side diffs. |
 | [code-review-expert](skills/code-review-expert/) | Senior engineer code review covering SOLID, security, performance, code structure, and error handling. Supports local git changes and GitHub PR URLs. |
-| [draw-io](skills/draw-io/) | draw.io diagram creation, editing, and review. Supports .drawio XML editing, PNG conversion, layout adjustment, and AWS icon usage. |
-| [humanizer](skills/humanizer/) | Remove signs of AI-generated writing from text. Detects and fixes inflated symbolism, promotional language, AI vocabulary, and other telltale patterns. |
-| [marp-slide](skills/marp-slide/) | Create professional Marp presentation slides with 7 built-in themes, custom image layouts, and automatic quality improvements. |
-| [nano-banana-pro](skills/nano-banana-pro/) | Generate images from text prompts using Google Gemini. |
-| [pdf](skills/pdf/) | PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. |
-| [pptx](skills/pptx/) | Presentation creation, editing, and analysis for .pptx files with template support, thumbnail generation, and visual validation. |
-| [vscode](skills/vscode/) | VS Code integration for viewing diffs and comparing files side by side. |
+| [draw-io](skills/draw-io/)                       | draw.io diagram creation, editing, and review. Supports .drawio XML editing, PNG conversion, layout adjustment, and AWS icon usage. |
+| [humanizer](skills/humanizer/)                   | Remove signs of AI-generated writing from text. Detects and fixes inflated symbolism, promotional language, AI vocabulary, and other telltale patterns. |
+| [marp-slide](skills/marp-slide/)                 | Create professional Marp presentation slides with 7 built-in themes, custom image layouts, and automatic quality improvements. |
+| [nano-banana-pro](skills/nano-banana-pro/)       | Generate images from text prompts using Google Gemini. |
+| [pdf](skills/pdf/)                               | PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. |
+| [pptx](skills/pptx/)                             | Presentation creation, editing, and analysis for .pptx files with template support, thumbnail generation, and visual validation. |
+| [vscode](skills/vscode/)                         | VS Code integration for viewing diffs and comparing files side by side. |
 | [youtube-transcript](skills/youtube-transcript/) | Fetch transcripts from YouTube videos for summarization and analysis. |
+| [video-use](skills/video-use/)                   | Video editing and analysis. |
+
+# Recommended Skills
+Use the npx sills add command to add the skills to your local machine.
+- `heygen-com/hyperframes` - Generate animations to videos
+- 
 
 ## Installation for Cursor
 
