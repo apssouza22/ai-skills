@@ -1,0 +1,9 @@
+---
+description: Frontend rules for Cursor
+globs: ['**/*.tsx', '**/*.ts', '**/*.jsx', '**/*.js', '**/*.css']
+alwaysApply: false
+---
+
+@.agents/docs/typescript-code-style.md
+@.agents/docs/frontend-guidelines.md
+

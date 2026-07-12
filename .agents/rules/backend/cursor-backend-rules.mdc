@@ -1,0 +1,10 @@
+---
+description: Backend rules for Cursor
+globs: ['**/*.java', '**/*.md', '**/*.gradle.kts', '**/*.toml']
+alwaysApply: false
+---
+
+@.agents/docs/backend-design-architecture.md
+@.agents/docs/java-code-style.md
+@.agents/docs/java-dependency-management.md
+@.agents/docs/backend-test-guidelines.md
